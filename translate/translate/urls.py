@@ -18,6 +18,6 @@ from django.contrib import admin
 from django.urls import path, include 
 from  quotation import urls
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('quotation.urls')),  # Include your app's URLs with a prefix
+    path('api/admin/', admin.site.urls),
+    path('api/', include('quotation.urls')),  # Include your app's URLs with a prefix
 ]
