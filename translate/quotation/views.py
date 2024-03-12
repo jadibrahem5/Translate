@@ -5,7 +5,11 @@ from django.core.mail import send_mail
 from .serializers import TranslationRequestSerializer
 from rest_framework.renderers import JSONRenderer
 from rest_framework.parsers import JSONParser
+from django.http import HttpResponse
 
+def hello_view(request):
+    return HttpResponse('<h1>Hello</h1>')
+    
 class TranslationRequestAPI(APIView):
     renderer_classes = [JSONRenderer]  # Ensure responses are rendered as JSON
     parser_classes = [JSONParser]  # Ensure requests are parsed as JSON
