@@ -20,7 +20,7 @@ env = environ.Env()
 environ.Env.read_env()
 
 # SECRET_KEY = env('SECRET_KEY')
-DEBUG = env.bool('DEBUG', default=True)
+DEBUG = env.bool('DEBUG', default=Fales)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
@@ -30,7 +30,8 @@ SECRET_KEY = 'django-insecure-geqetnc^i%ly!!r+p6%3@-0xx&+v@jjw6!m_e^4@v=5b7gro80
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tarekammourah-llc.ae', 'www.tarekammourah-llc.ae', '31.220.107.133']
+
 
 
 # Application definition
